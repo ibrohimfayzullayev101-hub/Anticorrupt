@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07111f">
+  <title>AntiCorrupt — прозрачность начинается с нас</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="AntiCorrupt home"><span class="brand-mark">A<span>+</span></span><span>ANTI<span class="brand-light">CORRUPT</span></span></a>
+    <nav class="nav" id="mainNav">
+      <a href="#about" data-i18n="navAbout">О проекте</a>
+      <a href="#how" data-i18n="navHow">Как это работает</a>
+      <a href="#stats" data-i18n="navStats">Статистика</a>
+    </nav>
+    <div class="header-actions">
+      <select id="languageSelect" class="language-select" aria-label="Language">
+        <option value="ru">RU</option><option value="uz">UZ</option>
+      </select>
+      <a class="button button-small button-outline" href="#report" data-i18n="navReport">Отправить обращение</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="eyebrow">ПЛАТФОРМА ОБЩЕСТВЕННОЙ ПРОЗРАЧНОСТИ</span></div>
+        <h1 data-i18n="heroTitle">Честность — это<br><span>сила общества.</span></h1>
+        <p class="hero-text" data-i18n="heroText">Безопасный и понятный способ сообщить о возможной коррупции, получить номер обращения и следить за ходом его рассмотрения.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#report"><span data-i18n="heroCta">Сообщить о проблеме</span><span class="arrow">↗</span></a>
+          <a class="text-link" href="#how"><span data-i18n="heroLearn">Узнать, как это работает</span><span>→</span></a>
+        </div>
+        <div class="trust-note"><span class="shield">✦</span><span data-i18n="trustNote">Не публикуем личные данные и непроверенные обвинения</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="glass-card main-glass">
+          <div class="card-top"><span class="live-dot"></span><span data-i18n="liveLabel">ПРИНЦИПЫ ПЛАТФОРМЫ</span><span class="card-menu">•••</span></div>
+          <div class="visual-emblem"><div class="emblem-ring">A<span>+</span></div></div>
+          <div class="visual-title" data-i18n="visualTitle">Прозрачность начинается с диалога</div>
+          <div class="visual-sub" data-i18n="visualSub">Конфиденциальность · Ответственность · Проверка</div>
+          <div class="visual-divider"></div>
+          <div class="visual-bottom"><span data-i18n="caseLabel">ВАШЕ ОБРАЩЕНИЕ</span><span class="status-pill" data-i18n="secureLabel">ЗАЩИЩЁННЫЙ ПРОЦЕСС</span></div>
+        </div>
+        <div class="floating-tag tag-top"><span class="tag-icon">✓</span><span data-i18n="tagVerified">Проверка обращений</span></div>
+        <div class="floating-tag tag-bottom"><span class="tag-icon">◈</span><span data-i18n="tagPrivate">Бережно к данным</span></div>
+        <div class="hero-index">01 <span>/ 04</span></div>
+      </div>
+    </section>
+
+    <section class="metrics section-wrap" id="stats">
+      <div class="section-kicker" data-i18n="metricsKicker">ОТКРЫТЫЕ ДАННЫЕ</div>
+      <div class="metric-grid">
+        <article class="metric"><div class="metric-value" id="totalMetric">0</div><div class="metric-label" data-i18n="metricTotal">Обращений в демо-системе</div><div class="metric-line"></div></article>
+        <article class="metric"><div class="metric-value" id="reviewMetric">0</div><div class="metric-label" data-i18n="metricReview">На рассмотрении</div><div class="metric-line"></div></article>
+        <article class="metric"><div class="metric-value" id="doneMetric">0</div><div class="metric-label" data-i18n="metricDone">Рассмотрено</div><div class="metric-line"></div></article>
+        <article class="metric metric-note"><div class="metric-symbol">↗</div><div class="metric-label" data-i18n="metricNote">Статистика обновляется на основе обращений, сохранённых в этом браузере.</div></article>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap" id="about">
+      <div class="section-heading"><div><div class="section-kicker" data-i18n="aboutKicker">НАША МИССИЯ</div><h2 data-i18n="aboutTitle">Технологии ради<br><span>общественного доверия.</span></h2></div><p data-i18n="aboutText">AntiCorrupt — концепция независимой цифровой платформы, которая помогает структурировать сообщения о возможных нарушениях и делает процесс рассмотрения понятнее.</p></div>
+      <div class="principle-grid">
+        <article class="principle-card"><div class="principle-number">01</div><div class="principle-icon">⌁</div><h3 data-i18n="principle1Title">Доступность</h3><p data-i18n="principle1Text">Понятная форма обращения на русском и узбекском языках.</p></article>
+        <article class="principle-card"><div class="principle-number">02</div><div class="principle-icon">◈</div><h3 data-i18n="principle2Title">Осторожность</h3><p data-i18n="principle2Text">Минимум личных данных и никаких публичных обвинений.</p></article>
+        <article class="principle-card"><div class="principle-number">03</div><div class="principle-icon">◎</div><h3 data-i18n="principle3Title">Подотчётность</h3><p data-i18n="principle3Text">Статусы помогают видеть этап обработки обращения.</p></article>
+      </div>
+    </section>
+
+    <section class="process-section" id="how"><div class="section-wrap">
+      <div class="section-kicker" data-i18n="processKicker">ПРОСТОЙ ПРОЦЕСС</div><div class="process-head"><h2 data-i18n="processTitle">От сообщения<br>к рассмотрению.</h2><p data-i18n="processText">Сообщение не является доказательством нарушения. Каждое обращение требует проверки уполномоченными специалистами.</p></div>
+      <div class="steps">
+        <div class="step"><span>01</span><div class="step-line"></div><h3 data-i18n="step1Title">Опишите ситуацию</h3><p data-i18n="step1Text">Укажите факты, примерную дату и сферу.</p></div>
+        <div class="step"><span>02</span><div class="step-line"></div><h3 data-i18n="step2Title">Получите номер</h3><p data-i18n="step2Text">Сохраните номер обращения для проверки статуса.</p></div>
+        <div class="step"><span>03</span><div class="step-line"></div><h3 data-i18n="step3Title">Проверка</h3><p data-i18n="step3Text">Ответственная команда изучает информацию.</p></div>
+      </div>
+    </div></section>
+
+    <section class="report-section section-wrap" id="report">
+      <div class="report-intro"><div class="section-kicker" data-i18n="reportKicker">ВАШ ГОЛОС ИМЕЕТ ЗНАЧЕНИЕ</div><h2 data-i18n="reportTitle">Расскажите о<br><span>возможной проблеме.</span></h2><p data-i18n="reportText">Пожалуйста, описывайте только то, что вам известно. Не добавляйте пароли, паспортные данные, адреса проживания или другие чувствительные сведения.</p><div class="privacy-box"><span>◇</span><div><strong data-i18n="privacyTitle">Важно о конфиденциальности</strong><p data-i18n="privacyText">Это демонстрационная версия: данные сохраняются только в локальном браузере и не отправляются в государственные органы или администраторам.</p></div></div></div>
+      <form class="report-form" id="reportForm">
+        <div class="form-heading"><span data-i18n="formTitle">НОВОЕ ОБРАЩЕНИЕ</span><span class="form-step">01 — 03</span></div>
+        <label for="category" data-i18n="categoryLabel">Категория</label>
+        <select id="category" required><option value="" data-i18n="chooseCategory">Выберите категорию</option><option value="procurement" data-i18n="cat1">Государственные закупки</option><option value="bribery" data-i18n="cat2">Возможное вымогательство или взятка</option><option value="conflict" data-i18n="cat3">Конфликт интересов</option><option value="other" data-i18n="cat4">Другое</option></select>
+        <label for="region" data-i18n="regionLabel">Регион (необязательно)</label>
+        <select id="region"><option value="" data-i18n="regionNone">Не указывать</option><option>Tashkent</option><option>Andijon</option><option>Buxoro</option><option>Farg‘ona</option><option>Jizzax</option><option>Namangan</option><option>Navoiy</option><option>Qashqadaryo</option><option>Samarqand</option><option>Sirdaryo</option><option>Surxondaryo</option><option>Toshkent viloyati</option><option>Xorazm</option><option>Qoraqalpog‘iston</option></select>
+        <label for="description" data-i18n="descriptionLabel">Описание ситуации</label>
+        <textarea id="description" rows="5" minlength="20" maxlength="2000" required data-i18n-placeholder="descriptionPlaceholder" placeholder="Опишите, что произошло, когда и в какой сфере..."></textarea>
+        <div class="char-count"><span data-i18n="minChars">Минимум 20 символов</span><span id="charCount">0 / 2000</span></div>
+        <label class="check-row"><input type="checkbox" id="confirmFacts" required><span data-i18n="confirmText">Я понимаю, что сообщение должно содержать добросовестное описание известных мне фактов.</span></label>
+        <button class="button button-primary submit-button" type="submit"><span data-i18n="submitReport">Отправить обращение</span><span>↗</span></button>
+        <p class="form-footnote" data-i18n="formFootnote">Не используйте эту демо-форму для срочных ситуаций или реальных персональных данных.</p>
+        <div class="form-result" id="formResult" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="track-section section-wrap">
+      <div><div class="section-kicker" data-i18n="trackKicker">ПРОВЕРКА СТАТУСА</div><h2 data-i18n="trackTitle">Где моё<br><span>обращение?</span></h2></div>
+      <form id="trackForm" class="track-form"><label for="trackId" data-i18n="trackLabel">Введите номер обращения</label><div class="track-input-row"><input id="trackId" placeholder="AC-XXXXXX" required><button class="button button-primary" data-i18n="trackButton">Проверить</button></div><div id="trackResult" class="track-result" aria-live="polite"></div></form>
+    </section>
+
+    <section class="admin-section section-wrap" id="admin">
+      <div class="admin-banner"><div><div class="section-kicker" data-i18n="adminKicker">РАЗДЕЛ ДЛЯ ДЕМО-АДМИНИСТРАТОРА</div><h2 data-i18n="adminTitle">Панель управления</h2><p data-i18n="adminText">Просмотр локальных тестовых обращений и изменение их статусов.</p></div><button class="button button-outline" id="adminToggle" data-i18n="adminOpen">Открыть админ-панель ↗</button></div>
+      <div class="admin-panel hidden" id="adminPanel">
+        <div class="admin-login" id="adminLogin"><label for="adminPassword" data-i18n="adminPasswordLabel">Демо-пароль</label><div class="track-input-row"><input type="password" id="adminPassword" placeholder="••••"><button class="button button-primary" id="adminLoginButton" type="button" data-i18n="adminLogin">Войти</button></div><small data-i18n="adminDemoHint">Демо-пароль: 2468. Не используйте этот вариант в реальном проекте.</small><p id="loginError" class="error-text"></p></div>
+        <div class="admin-content hidden" id="adminContent"><div class="admin-toolbar"><h3 data-i18n="adminInbox">Входящие обращения</h3><button class="button button-outline button-small" id="exportButton" data-i18n="exportCsv">Экспорт CSV</button></div><div id="adminList" class="admin-list"></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="brand"><span class="brand-mark">A<span>+</span></span><span>ANTI<span class="brand-light">CORRUPT</span></span></div><p data-i18n="footerText">Концепция цифровой платформы общественной прозрачности.</p><span>© 2026 ANTI CORRUPT · DEMO</span></footer>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="config.js"></script>
+<script src="app.js"></script>  
+</body>
+</html>
